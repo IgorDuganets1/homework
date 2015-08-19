@@ -1,0 +1,10 @@
+Class "MusicInstruments"
+
+attributes:
+manufacturer, model, country of origin, price, acoustic, type (wind, string, keyboard),electronic, interface, weight, color
+
+public methods : 
+customize, play, connect, install, transport, repair,
+
+private methods : 
+to hold pitch, to sound, transmit the signal, pleasing the user

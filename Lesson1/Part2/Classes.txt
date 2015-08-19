@@ -1,0 +1,93 @@
+Customer goods
+attributes
+артикул, цена, еда/не еда, упаковка, вес, количество, производитель, марка, срок годности, условия хранения
+article, the price, the food / non-food, packaging, weight, number, manufacturer, brand, expiration date, storage conditions
+methods 
+public: хранить, купить, доставить, выбрать, найти, использовать
+store, buy, deliver, select, find, use
+private: испортится, информирует покупателя упаковкой, привлекает внимание внешним видом, соответсвует требованиям, конкурирует
+go bad,
+inform customer on packaging,
+attracts attention by the appearance,
+meets the requirements
+competes
+
+Worker of company
+attributes
+должность, пол, дата рождения, образование, объект образования, место проживания, контактный телефон, стаж, уровень владения иностранным языком, зарплата
+position, gender, date of birth, education, place of education, place of residence, contact telephone number, seniority, level of foreign language, salary
+methods 
+public: выдать зарплату, провести экзамены, дать премию, выдать рабочий инструмент, провести инструктаж
+give salary
+to conduct exams,
+give bonus,
+give a working tool,
+to instruct
+
+private: убрать рабочее место, выполнить задание, пить чай, пройти инструктаж , посетить тренинг
+clean workspace,
+perform a task,
+to drink tea,
+be instructed,
+Visit coaching
+
+Touch screen devices (like phones, tablets)
+attributes
+formfactor, size, OS, Card slot, Internal Memory, CPU, Colour, Producer, Model, country of origin
+methods 
+public: подключить питание, вставить карточку, провести обновление ПО, сфотографировать, включить вай-фай
+connect the power supply,
+insert the card,
+to upgrade software
+to photograph,
+turn wi-fi
+private: найти сеть, загрузить ОС, отформатировать карточку, выполнить установку приложения, сохранить фотографию
+find a network,
+load OS
+format card,
+install an application
+save the photo
+
+Music instruments
+attributes
+Производитель, Модель, страна производства, цена, вид (духовые, струнные, клавишные), акустические, электронные, интерфейс, вес, цвет
+Manufacturer, model, Country of Origin, price, acoustic, type (wind, string, keyboard),electronic, interface, weight, color
+methods 
+public: настроить, играть, подключить, установить, перевезти, починить,
+customize, play, connect, install, transport, repair,
+private: держать строй, звучать, передавать сигнал, радовать пользователя
+to hold pitch
+to sound,
+transmit the signal
+pleasing the user
+
+Entertainments
+attributes
+время начала, длительность, название, цена,  адрес, максимальное количество участников, минимальное количество участников, питание, категория (спорт\музыка), на воздухе
+start time, duration, name, price, address, maximum number of participants, the minimum number of participants, catering, category (sports \ music), in the air
+methods 
+public: прийти, уехать, организовать, купить билет, искать, фотографировать, участвовать
+to come, to leave, organize, buy a ticket, to look, take pictures, participate
+private: включить музыку, подать угощение, провести конкурс, пригласить посетителей, продавать билет
+play music, file a treat,  hold a competition, invite visitors,  sell tickets
+
+Books
+attributes
+название, автор, год выпуска, тираж, обложка, количество страниц, цена, сборник, жанр, 
+title, author, Year of release, circulation, cover, number of pages, price, compilation, genre,
+methods 
+public: читать, листать, класть, клеить, дарить, закрыть, открыть
+to read, leaf, to put, gluing, to give, close, open
+
+private: отпечатана,  отредактирована, илюстрирована, 
+printed, edited, illustrated,
+
+Hotels
+attributes
+адрес, категория, наличие басейна, наличие пляжа, количество номеров, питание, система проживания (алл инклюзив), площадь территории, спа, вай-фай
+address, category, pool available, the beach, number of rooms, catering, accommodation system (ALL inclusive), land area, spa, wi-fi
+methods 
+public: заселится, выехать, проживать, питаться, купаться,
+arrive, departure, live, eat, swim,
+private: убрать номер, приготовить завтрак, ремонт, озеленение территории, стирать белье,
+clean room, cook breakfast, repairs, landscaping, wash clothes,

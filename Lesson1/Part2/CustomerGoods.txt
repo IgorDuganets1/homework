@@ -1,0 +1,10 @@
+class "CustomerGoods"
+
+attributes:
+article, price, food / non-food, packaging, weight, number, manufacturer, brand, expiration date, storage conditions
+
+public methods: 
+store, buy, deliver, select, find, use
+
+private methods: 
+go bad, inform customer on packaging, attracts attention by the appearance, match the requirements, competes

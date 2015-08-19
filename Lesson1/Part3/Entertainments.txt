@@ -1,0 +1,28 @@
+Class "Entertainments"
+
+attributes:
+start time, duration, name, price, address, maximum number of participants, the minimum number of participants, catering, category (sports \ music), outdoor or indoor
+
+public methods : 
+to come, to leave, organize, buy a ticket, to look, take pictures, participate
+
+private methods :
+play music, file a treat,  hold a competition, invite visitors,  sell tickets
+
+Class Concert extends Entertainments
+attributes: group, afisha, style
+methods: listen, dance
+
+Class Picnic extends Entertainments
+attributes: fire, barbecue, transport
+methods: look for wood, lay on grass
+
+Class Match extends Entertainments
+attributes: sport, flag, beer
+methods: cry, jump
+
+Class Excursion extends Entertainments
+attributes: single or group, guide, pedestrian
+methods: ask questions, report about
+
+

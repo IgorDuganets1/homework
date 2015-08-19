@@ -1,0 +1,10 @@
+Class "Hotels"
+
+attributes:
+address, category, pool available, the beach, number of rooms, catering, accommodation system (ALL inclusive), land area, spa, wi-fi
+ 
+public methods : 
+arrive, departure, live, eat, swim,
+
+private methods : 
+clean room, cook breakfast, repairs, landscaping, wash clothes,

@@ -1,0 +1,28 @@
+Class "Books"
+
+attributes:
+title, author, Year of release, circulation, cover, number of pages, price, compilation, genre,
+methods 
+public methods: 
+to read, leaf, to put, gluing, to give, close, open
+
+private methods:  
+printed, edited, illustrated
+
+Class Calendar extends Books
+attributes: place (table or wall), size, tear
+methods: hang, invert
+
+Class ComicStrip extends Books
+attributes: superhero, age, country
+methods: look, draw
+
+Class Textbook extends Books
+attributes: subject, level, school
+methods: get, teach
+
+Class Guide extends Books
+attributes: object, language, CD
+methods: buy, translate
+
+

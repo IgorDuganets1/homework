@@ -1,0 +1,10 @@
+Class "TouchScreenDevices" 
+
+attributes 
+form, size, OS, Card slot, Internal Memory, CPU, Colour, Producer, Model, country of origin
+ 
+public methods: 
+connect the power supply, insert the card, upgrade software, make photo, turn wi-fi
+
+private methods: 
+find a network, load OS, format card, install an application, save the photo

@@ -1,0 +1,10 @@
+Class "WorkerOfCompany"
+
+attributes:
+name, position, gender, date of birth, education, place of education, adress, contact telephone number, seniority, level of foreign language, salary
+
+public methods : 
+give salary, examine, give bonus, give a working tool, to instruct
+
+private methods : 
+clean workspace, perform a task, to drink tea, be instructed, visit coaching

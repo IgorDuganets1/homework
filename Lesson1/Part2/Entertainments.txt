@@ -1,0 +1,10 @@
+Class "Entertainments"
+
+attributes:
+start time, duration, name, price, address, maximum number of participants, the minimum number of participants, catering, category (sports \ music), in the air
+
+public methods : 
+to come, to leave, organize, buy a ticket, to look, take pictures, participate
+
+private methods :
+play music, file a treat,  hold a competition, invite visitors,  sell tickets
