@@ -39,6 +39,7 @@ private String guide; // name
 private boolean pedestrian;
 private ask(){} // ask questions
 public report(){} // report about
+										}
 										
 class Picnic extends Entertainments	{
 private boolean fire;

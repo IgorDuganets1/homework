@@ -8,15 +8,3 @@ store, buy, deliver, select, find, use
 
 private methods: 
 go bad, inform customer on packaging, attracts attention by the appearance, match the requirements, competes
-
-Class Potato extends CustomerGoods
-attributes: color, fresh / old, shelled
-methods: fry, peel
-
-Class Tomato extends CustomerGoods
-attributes: variety, greenhouse , taste
-methods: cut, conserve 
-
-Class Soap extends CustomerGoods
-attributes: smell, kind
-methods: 

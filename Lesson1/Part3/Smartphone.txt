@@ -1,0 +1,3 @@
+Class Smartphone extends TouchScreenDevices
+attributes: 3g module, front camera, number of SIM cards 
+methods: find GSM network, chandge SIM card

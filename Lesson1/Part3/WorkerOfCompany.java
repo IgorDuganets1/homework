@@ -45,6 +45,13 @@ class Cleaner extends WokerOfCompany	{
 private boolean mop; 
 private boolean broom;
 private boolean bucket;
-privat sweep(){}
-privat wash(){}
+private sweep(){}
+private wash(){}
 										}
+										
+class Journalist extends WokerOfCompany	{
+private String voiceRecorder; //  voice recorder brand
+private boolean isNotepad; // notepad
+private String pen; // pen brand
+private  call(){} // make phone call
+public makeinterview(){} // make interview

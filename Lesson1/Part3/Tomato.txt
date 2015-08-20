@@ -1,0 +1,3 @@
+Class Tomato extends CustomerGoods
+attributes: variety, greenhouse , taste
+methods: cut, conserve 

@@ -1,0 +1,3 @@
+Class Boss extends WokerOfCompany
+attributes: MBA, personal driver, golden watch
+methods: sign a document, make meeting

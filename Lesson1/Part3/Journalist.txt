@@ -1,0 +1,3 @@
+Class Journalist extends WokerOfCompany
+attributes: voice recorder, notepad, pen
+methods:  make phone calls, interviews

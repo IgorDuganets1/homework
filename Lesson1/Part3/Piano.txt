@@ -1,0 +1,3 @@
+Class Piano extends MusicInstruments
+attributes: number of octaves, material of keys, concert or home use
+methods: open cover, push key

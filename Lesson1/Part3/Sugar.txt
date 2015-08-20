@@ -1,0 +1,3 @@
+class Sugar extends CustomerGoods
+attributes: source (beet or cane), lump sugar or granulated sugar, brown or white
+methods: pour, spill

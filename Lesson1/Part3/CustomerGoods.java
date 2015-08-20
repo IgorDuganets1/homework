@@ -24,31 +24,4 @@ public class CustomerGoods
 	private match(){}// match the requirements
 	private competes(){}				
 						}
-						
-class Potato extends CustomerGoods	{
-private String color;
-private boolean fresh; // fresh / old
-private boolean shelled;
-public fry(){}
-public peel(){}
-									}
-									
-class Tomato extends CustomerGoods	{
-private String variety;
-private boolean greenhouse;
-private String taste;
-public cut(){}
-public conserve(){}
-									}
-									
-class Soap extends CustomerGoods	{
-private String smell;
-private String kind; // toilet, 
-private boolean organic;
-public wash(){}
-public catch(){}
-									}
-									
-class Sugar extends CustomerGoods	{
-attributes: source (beet or cane), lump sugar or granulated sugar, brown or white
-methods: pour, spill
+
