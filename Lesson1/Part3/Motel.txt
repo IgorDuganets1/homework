@@ -1,0 +1,3 @@
+Class Motel extends Hotels
+attributes: parking, road, market
+methods: sleep, drink Cola
