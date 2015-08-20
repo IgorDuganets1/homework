@@ -1,5 +1,6 @@
 Class "Books"
 
+
 attributes:
 title, author, Year of release, circulation, cover, number of pages, price, compilation, genre,
 methods 
