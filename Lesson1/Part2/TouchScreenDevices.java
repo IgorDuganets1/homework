@@ -21,5 +21,7 @@ public turnWifi(){} // turn wi-fi
 private methods: 
 private findN(){} // find a network
 private load(){} // load OS
-private format card, install an application, save the photo
+private formatCard(){} //format card
+private installApplication(){} // install an application
+private savePhoto(){} // save the photo
 							}
