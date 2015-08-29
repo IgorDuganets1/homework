@@ -1,7 +1,7 @@
 class Programmer extends WokerOfCompany {
-private boolean linux; // linux skills
-private boolean laptop; 
-private boolean glasses;
+private boolean isLinux; // linux skills
+private boolean isLaptop; 
+private boolean isGlasses;
 private program(){}
 private download(){}
 										}

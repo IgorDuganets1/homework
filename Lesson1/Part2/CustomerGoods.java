@@ -1,4 +1,4 @@
-public class CustomerGoods
+Custpublic class CustomerGoods
 						{
 						private String article;
 						private int price;
@@ -12,7 +12,7 @@ public class CustomerGoods
 						private string StorageConditions;
 						
 	public store() {}
-	public	buy() {}
+	public buy() {}
 	public deliver() {}
 	public select(){}
 	public find() {}
