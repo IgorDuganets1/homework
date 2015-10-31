@@ -27,7 +27,7 @@ public class Testmethods {
      }
 
 	@Rule
-    public Timeout time = Timeout.seconds(1); 
+    public Timeout time = Timeout.millis(100); 
 	
 	@Rule
 	  public final ExpectedException exp = ExpectedException.none();
