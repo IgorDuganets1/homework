@@ -31,7 +31,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
-      mvn clean -DskipTests=true install
+      <scope>tests</scope>
     </dependency>
   </dependencies>
   <organization>
