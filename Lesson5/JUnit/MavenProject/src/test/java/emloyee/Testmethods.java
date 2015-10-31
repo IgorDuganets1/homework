@@ -26,34 +26,34 @@ public class Testmethods {
 		m = null;
      }
 
-	@Rule
-    public Timeout time = Timeout.millis(100); 
+//	@Rule
+ //   public Timeout time = Timeout.millis(100); 
 	
 	@Rule
 	  public final ExpectedException exp = ExpectedException.none();
 	
-	@Test
+	@Test(timeout=100)
 	public void testCalculateSalary()
 	{
 		float res = m.calculateSalary(1000.0f, 0.5f, 500.0f);
 		Assert.assertEquals(1250f, res, 0);
 		}
 	
-	@Test
+	@Test(timeout=100)
 	public void testCalculateTaxEmloyee()
 	{
 		float res = m.calculateTaxEmloyee(1000f, 0.2f);
 		Assert.assertEquals(200f, res, 0);
 		}
 	
-	@Test
+	@Test(timeout=100)
 	public void testTakeNameEmployee()
 	{
 		String name = m.takeNameEmployee("Jack", "Bruce", "bassman");
 		Assert.assertEquals(name, "Jack Bruce, bassman");
 		}
 	
-	@Test
+	@Test(timeout=100)
 	public void testAdressEmployee()
 	{
 		String adress = m.takeAdressEmployee("Baker street", "12/2", "3");
