@@ -22,6 +22,7 @@
     <version>3.3</version>
     <configuration>
           <parallel>methods</parallel>
+          <useUnlimitedThreads>true</useUnlimitedThreads>
       </configuration>
      </plugin>
   </plugins>
