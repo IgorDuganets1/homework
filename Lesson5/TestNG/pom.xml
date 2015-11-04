@@ -21,6 +21,12 @@
 	<version>6.9.4</version>
 	<scope>test</scope>
   </dependency>
+  <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>tests</scope>
+    </dependency>
   </dependencies>
   <description>Homework 5 
 TestNG project</description>
