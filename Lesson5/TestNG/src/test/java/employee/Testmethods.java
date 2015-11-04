@@ -4,7 +4,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
-import org.junit.rules.Timeout;
 import org.testng.annotations.Test;
 
 public class Testmethods {
@@ -25,14 +24,11 @@ public class Testmethods {
 	     }
 
 
-	//	@Rule
-	 //   public Timeout time = Timeout.millis(100); 
-		
 		@Rule
 		  public final ExpectedException exp = ExpectedException.none();
 		
 		
-		@Test(groups={"takeEmployee"})
+		@Test(groups={"takeEmployee"},timeOut=100)
 		public void testTakeNameEmployee()
 		{
 			String name = m.takeNameEmployee("Jack", "Bruce", "bassman");
@@ -40,7 +36,7 @@ public class Testmethods {
 			}
 		
 			
-		@Test (groups={"Calculate"})
+		@Test (groups={"Calculate"},timeOut=100)
 		public void testCalculateExperienceRatio()
 		{
 			float res=m.calculateExperienceRatio(2000, 3, 2009, 2, 10);
@@ -48,21 +44,21 @@ public class Testmethods {
 			}
 		
 			
-		@Test(groups={"getEmployee"})
+		@Test(groups={"getEmployee"},timeOut=100)
 		public void testGetDateOfBirthEmployee()
 		{
 			String date=m.getDateOfBirthEmployee();
 			Assert.assertEquals(date, "1943-05-14");
 		}
 		
-		@Test(dependsOnGroups={"Calculate"})
+		@Test(dependsOnGroups={"Calculate"},timeOut=100)
 		public void testIsBirthdayBonus()
 		{
 			boolean res=m.isBirthdayBonus(5);
 			Assert.assertEquals(true, res);
 		}
 		
-		@Test(dependsOnMethods={"testCalculateExperienceRatio"})
+		@Test(dependsOnMethods={"testCalculateExperienceRatio"},timeOut=100)
 		public void testCalculateTaxEmloyee()
 		{
 			float res = m.calculateTaxEmloyee(1000f, 0.2f);

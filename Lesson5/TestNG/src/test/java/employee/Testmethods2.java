@@ -2,7 +2,6 @@ package employee;
 
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
-import org.junit.rules.Timeout;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,14 +11,11 @@ public class Testmethods2 {
 	
 	private static methods m;
 	
-	
-
 	@BeforeClass (alwaysRun=true)
 	public static void runM()
 	{
 		m = new methods();
 	}
-	
 	
 	@AfterClass (alwaysRun=true)
 	public static void closeM()
@@ -27,13 +23,11 @@ public class Testmethods2 {
 		m = null;
      }
 
-//	@Rule
-//    public Timeout time = Timeout.millis(1000); 
-	
 	@Rule
 	  public final ExpectedException exp = ExpectedException.none();
 	
-	@Test(groups={"Calculate"})
+	
+	@Test(groups={"Calculate"},timeOut=100)
 	public void testCalculateSalary()
 	{
 		float res = m.calculateSalary(1000.0f, 0.5f, 500.0f);
@@ -41,14 +35,14 @@ public class Testmethods2 {
 		}
 	
 		
-	@Test(groups={"takeEmployee"})
+	@Test(groups={"takeEmployee"},timeOut=100)
 	public void testTakeAdressEmployee()
 	{
 		String adress = m.takeAdressEmployee("Baker street", "12/2", "3");
 		Assert.assertEquals(adress, "Baker street, 12/2, 3");
 	}
 	
-	@Test(groups={"takeEmployee"})
+	@Test(groups={"takeEmployee"},timeOut=100)
 	public void testTakeDateOfBirthEmloyee()
 	{
 		String date=m.takeDateOfBirthEmloyee("1943", "05", "14");
@@ -56,7 +50,7 @@ public class Testmethods2 {
 	}
 	
 	
-	@Test (expectedExceptions = ArithmeticException.class,groups={"Calculate"})
+	@Test (expectedExceptions = ArithmeticException.class,groups={"Calculate"},timeOut=100)
 	public void testCalculateExperienceRatioException()
 	{
 		exp.expect(Exception.class);
@@ -65,14 +59,14 @@ public class Testmethods2 {
 	}
 	
 
-	@Test(groups={"getEmployee"})
+	@Test(groups={"getEmployee"},timeOut=100)
 	public void testGetNameEmployee()
 	{
 		String name = m.getNameEmployee();
 		Assert.assertEquals(name, "Jack Bruce, bassman");
 	}
 	
-	@Test(groups={"getEmployee"})
+	@Test(groups={"getEmployee"},timeOut=100)
 	public void testGetAdressEmployee()
 	{
 		String adress = m.getAdressEmployee();
