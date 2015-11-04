@@ -1,0 +1,25 @@
+<suite name="TestSuite">
+	<test name="AutoQA">
+	<groups>
+		<define name="employee_data">
+      		<include name="getEmployee"/>
+      		<include name="takeEmployee"/>
+    	</define>
+    	<define name="all">
+     		<include name="employee_data"/>
+      		<include name="Calculate"/>
+      	</define>
+     <run>
+     <include name="all"/>
+     </run>
+ 
+  	 </groups>
+		<classes>
+			<class name="employee.Testmethods" />
+			<class name="employee.Testmethods2" />
+			
+				
+		</classes>
+		
+	</test>
+</suite>

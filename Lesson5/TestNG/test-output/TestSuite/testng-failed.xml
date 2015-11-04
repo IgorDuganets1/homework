@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test name="AutoQA(failed)">
+    <groups>
+      <run>
+        <include name="Calculate"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="employee.Testmethods2">
+        <methods>
+          <include name="testCalculateExperienceRatioException"/>
+          <include name="testCalculateSalary"/>
+          <include name="testIsBirthdayBonus"/>
+        </methods>
+      </class> <!-- employee.Testmethods2 -->
+    </classes>
+  </test> <!-- AutoQA(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="102" started-at="2015-11-04T11:57:23Z" finished-at="2015-11-04T11:57:23Z">
+    <groups>
+      <group name="takeEmployee">
+        <method signature="Testmethods.testTakeNameEmployee()[pri:0, instance:employee.Testmethods@357246de]" name="testTakeNameEmployee" class="employee.Testmethods"/>
+        <method signature="Testmethods2.testTakeAdressEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testTakeAdressEmployee" class="employee.Testmethods2"/>
+        <method signature="Testmethods2.testTakeDateOfBirthEmloyee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testTakeDateOfBirthEmloyee" class="employee.Testmethods2"/>
+      </group> <!-- takeEmployee -->
+      <group name="Calculate">
+        <method signature="Testmethods.testCalculateExperienceRatio()[pri:0, instance:employee.Testmethods@357246de]" name="testCalculateExperienceRatio" class="employee.Testmethods"/>
+        <method signature="Testmethods2.testCalculateExperienceRatioException()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testCalculateExperienceRatioException" class="employee.Testmethods2"/>
+        <method signature="Testmethods2.testCalculateSalary()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testCalculateSalary" class="employee.Testmethods2"/>
+      </group> <!-- Calculate -->
+      <group name="getEmployee">
+        <method signature="Testmethods.testGetDateOfBirthEmployee()[pri:0, instance:employee.Testmethods@357246de]" name="testGetDateOfBirthEmployee" class="employee.Testmethods"/>
+        <method signature="Testmethods2.testGetAdressEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testGetAdressEmployee" class="employee.Testmethods2"/>
+        <method signature="Testmethods2.testGetNameEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testGetNameEmployee" class="employee.Testmethods2"/>
+      </group> <!-- getEmployee -->
+    </groups>
+    <test name="AutoQA" duration-ms="102" started-at="2015-11-04T11:57:23Z" finished-at="2015-11-04T11:57:23Z">
+      <class name="employee.Testmethods">
+        <test-method status="PASS" signature="runM()[pri:0, instance:employee.Testmethods@357246de]" name="runM" is-config="true" duration-ms="15" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runM -->
+        <test-method status="PASS" signature="testCalculateExperienceRatio()[pri:0, instance:employee.Testmethods@357246de]" name="testCalculateExperienceRatio" duration-ms="13" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateExperienceRatio -->
+        <test-method status="PASS" signature="testGetDateOfBirthEmployee()[pri:0, instance:employee.Testmethods@357246de]" name="testGetDateOfBirthEmployee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDateOfBirthEmployee -->
+        <test-method status="PASS" signature="testTakeNameEmployee()[pri:0, instance:employee.Testmethods@357246de]" name="testTakeNameEmployee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTakeNameEmployee -->
+        <test-method status="PASS" signature="closeM()[pri:0, instance:employee.Testmethods@357246de]" name="closeM" is-config="true" duration-ms="0" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeM -->
+      </class> <!-- employee.Testmethods -->
+      <class name="employee.Testmethods2">
+        <test-method status="PASS" signature="runM()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="runM" is-config="true" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runM -->
+        <test-method status="PASS" signature="testCalculateExperienceRatioException()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testCalculateExperienceRatioException" duration-ms="11" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <exception class="java.lang.ArithmeticException">
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException
+	at employee.methods.calculateExperienceRatio(methods.java:41)
+	at employee.Testmethods2.testCalculateExperienceRatioException(Testmethods2.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateExperienceRatioException -->
+        <test-method status="PASS" signature="testCalculateSalary()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testCalculateSalary" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateSalary -->
+        <test-method status="PASS" signature="testGetAdressEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testGetAdressEmployee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAdressEmployee -->
+        <test-method status="PASS" signature="testGetNameEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testGetNameEmployee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNameEmployee -->
+        <test-method status="PASS" signature="testTakeAdressEmployee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testTakeAdressEmployee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTakeAdressEmployee -->
+        <test-method status="PASS" signature="testTakeDateOfBirthEmloyee()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="testTakeDateOfBirthEmloyee" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTakeDateOfBirthEmloyee -->
+        <test-method status="PASS" signature="closeM()[pri:0, instance:employee.Testmethods2@28f67ac7]" name="closeM" is-config="true" duration-ms="1" started-at="2015-11-04T13:57:23Z" finished-at="2015-11-04T13:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeM -->
+      </class> <!-- employee.Testmethods2 -->
+    </test> <!-- AutoQA -->
+  </suite> <!-- TestSuite -->
+</testng-results>
