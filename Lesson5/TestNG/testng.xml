@@ -1,14 +1,14 @@
 <suite name="TestSuite">
 	<test name="AutoQA">
 	<groups>
-		<define name="employee_data">
+	   <define name="employee_data">
       		<include name="getEmployee"/>
       		<include name="takeEmployee"/>
-    	</define>
-    	<define name="all">
+    	   </define>
+           <define name="all">
      		<include name="employee_data"/>
       		<include name="Calculate"/>
-      	</define>
+      	   </define>
      <run>
      <include name="all"/>
      </run>
