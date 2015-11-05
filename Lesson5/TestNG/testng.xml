@@ -10,7 +10,7 @@
       		<include name="Calculate"/>
       	   </define>
      <run>
-     <include name="all"/>
+        <include name="all"/>
      </run>
  
   	 </groups>
