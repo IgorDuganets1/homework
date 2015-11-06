@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +116,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="employee.Testmethods" hash-for-method="testCalculateTaxEmloyee">testCalculateTaxEmloyee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="employee.Testmethods2" hash-for-method="testGetAdressEmployee">testGetAdressEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -127,6 +132,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="employee.Testmethods2" hash-for-method="testGetNameEmployee">testGetNameEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="employee.Testmethods" hash-for-method="testIsBirthdayBonus">testIsBirthdayBonus</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,6 +166,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">employee.Testmethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateExperienceRatio">
+                  </a> <!-- testCalculateExperienceRatio -->
+                  <span class="method-name">testCalculateExperienceRatio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateTaxEmloyee">
+                  </a> <!-- testCalculateTaxEmloyee -->
+                  <span class="method-name">testCalculateTaxEmloyee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetDateOfBirthEmployee">
+                  </a> <!-- testGetDateOfBirthEmployee -->
+                  <span class="method-name">testGetDateOfBirthEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsBirthdayBonus">
+                  </a> <!-- testIsBirthdayBonus -->
+                  <span class="method-name">testIsBirthdayBonus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTakeNameEmployee">
+                  </a> <!-- testTakeNameEmployee -->
+                  <span class="method-name">testTakeNameEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -206,35 +259,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestSuite-class-passed -->
-          <div class="suite-TestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">employee.Testmethods</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCalculateExperienceRatio">
-                  </a> <!-- testCalculateExperienceRatio -->
-                  <span class="method-name">testCalculateExperienceRatio</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetDateOfBirthEmployee">
-                  </a> <!-- testGetDateOfBirthEmployee -->
-                  <span class="method-name">testGetDateOfBirthEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTakeNameEmployee">
-                  </a> <!-- testTakeNameEmployee -->
-                  <span class="method-name">testTakeNameEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-passed -->
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -255,9 +279,6 @@
         &lt;include name=&quot;getEmployee&quot;/&gt;
         &lt;include name=&quot;takeEmployee&quot;/&gt;
       &lt;/define&gt; &lt;!-- employee_data --&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;all&quot;/&gt;
-      &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;employee.Testmethods&quot;/&gt;
@@ -349,48 +370,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCalculateExperienceRatio')
 data.setCell(0, 2, 'employee.Testmethods')
-data.setCell(0, 3, 13);
+data.setCell(0, 3, 72);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCalculateExperienceRatioException')
 data.setCell(1, 2, 'employee.Testmethods2')
-data.setCell(1, 3, 11);
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testGetAdressEmployee')
 data.setCell(2, 2, 'employee.Testmethods2')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 6);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testTakeAdressEmployee')
-data.setCell(3, 2, 'employee.Testmethods2')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'testGetDateOfBirthEmployee')
+data.setCell(3, 2, 'employee.Testmethods')
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testGetDateOfBirthEmployee')
-data.setCell(4, 2, 'employee.Testmethods')
-data.setCell(4, 3, 1);
+data.setCell(4, 1, 'testCalculateSalary')
+data.setCell(4, 2, 'employee.Testmethods2')
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testTakeNameEmployee')
-data.setCell(5, 2, 'employee.Testmethods')
-data.setCell(5, 3, 1);
+data.setCell(5, 1, 'testGetNameEmployee')
+data.setCell(5, 2, 'employee.Testmethods2')
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCalculateSalary')
-data.setCell(6, 2, 'employee.Testmethods2')
-data.setCell(6, 3, 1);
+data.setCell(6, 1, 'testCalculateTaxEmloyee')
+data.setCell(6, 2, 'employee.Testmethods')
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testGetNameEmployee')
+data.setCell(7, 1, 'testTakeAdressEmployee')
 data.setCell(7, 2, 'employee.Testmethods2')
-data.setCell(7, 3, 1);
+data.setCell(7, 3, 2);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testTakeDateOfBirthEmloyee')
-data.setCell(8, 2, 'employee.Testmethods2')
-data.setCell(8, 3, 1);
+data.setCell(8, 1, 'testTakeNameEmployee')
+data.setCell(8, 2, 'employee.Testmethods')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testTakeDateOfBirthEmloyee')
+data.setCell(9, 2, 'employee.Testmethods2')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testIsBirthdayBonus')
+data.setCell(10, 2, 'employee.Testmethods')
+data.setCell(10, 3, 1);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 ms</span>
+              <span class="suite-total-time">Total running time: 104 ms</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -405,18 +434,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">employee.Testmethods</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testCalculateTaxEmloyee</span>
-                <br/>
-                <span class="ignored-method-name">testIsBirthdayBonus</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite" class="panel">
@@ -432,54 +452,65 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCalculateExperienceRatio</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetDateOfBirthEmployee</span>
-                <span class="method-start">45 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTakeNameEmployee</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">108 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">closeM</span>
-                <span class="method-start">50 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">employee.Testmethods2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">runM</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCalculateExperienceRatioException</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCalculateSalary</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">138 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAdressEmployee</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">142 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetNameEmployee</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">149 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTakeAdressEmployee</span>
-                <span class="method-start">85 ms</span>
+                <span class="method-start">152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTakeDateOfBirthEmloyee</span>
-                <span class="method-start">87 ms</span>
+                <span class="method-start">156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeM</span>
-                <span class="method-start">89 ms</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">employee.Testmethods</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCalculateTaxEmloyee</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsBirthdayBonus</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeM</span>
+                <span class="method-start">186 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
