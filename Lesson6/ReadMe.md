@@ -41,4 +41,6 @@ Logical connection between web-application’s pages is provided by the instance
 - **getIssueType()** returns Issue Type field value of last issue.
 
 ### *Test Suite list*
-- **test_1_NewIssueCreated** verify that New issues can be created
+- **test_1_NewIssueCreated** checks that New Issue can be created.
+- **test_2_UpdateIssue** checks that Existing Issue can be updated.
+- **test_3_ExistingIssueFoundJiraSearch** Existing Issue can be found via JIRA’s search
