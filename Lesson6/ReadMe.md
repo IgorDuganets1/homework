@@ -18,17 +18,11 @@ This method fills LOGIN field and PASSWORD field by *login* and *password*  valu
 
 
 ###### *loggedInPage class*
-- openProfile()
+- openProfile() calls Profile Page.
 
-This method calls Profile Page.
+- createIssue() calls Issue Create Window.
 
-- createIssue()
-
-This method calls Issue Create Window.
-
-- issue(String *summary*)
-
-This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
+- issue(String *summary*)  fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
 
 - searchIssue(String *summary*)
 
