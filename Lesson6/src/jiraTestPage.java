@@ -4,41 +4,48 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class jiraTestPage {
 	
 	private FirefoxDriver driver;
-	private final String SUMMARY="Newest Test Issue lesson 6";
+	private final String SUMMARY="Newest Test Issue в„–3";
 
-	@Ignore
+	
 	@Before
 	public void startBrowser() 
 	{driver= new FirefoxDriver();
-	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	driver.get(
 			"https://id.atlassian.com/login?application=jac&continue=https%3A%2F%2Fjira.atlassian.com%2Fprojects%2FDEMO");}
-	
-//	@After public void closeBrowser() 
-//			{driver.close();}
+
+	@After public void closeBrowser() 
+			{driver.close();}
 	
 	@Ignore
 	@Test
-	public void testProfileUserName(){
+	public void profileUserName(){
 		startPage home= new startPage(driver);
 		loggedInPage loggedin= home.login("svv.tes@gmail.com", "1234567890");
 		profilePage profile= loggedin.openProfile();
-		assertTrue(profile.getUserName().equals("testuser"));}
+		assertTrue(profile.getUserName().equals("testuser"));
+		}
 	
-	@Ignore
 	@Test
-	public void testNewIssueCreated(){
+	public void test_1_NewIssueCreated(){
+		
 		startPage home2=new startPage(driver);
 		loggedInPage loggedin=home2.login("svv.tes@gmail.com", "1234567890");
-	//	loggedin.createIssue();
-	//	loggedin.issue(SUMMARY);
+	
+//		loggedin.createIssue();
+//		loggedin.issue(SUMMARY);
+	
 		profilePage profile= loggedin.openProfile();
 		filterPage filter=profile.openReportedAndOpen();
 		assertTrue(filter.getSummaryIssue().equals(SUMMARY));
@@ -46,31 +53,25 @@ public class jiraTestPage {
 	
 	
 	@Test
-	public void testUpdateIssue(){
+	public void test_2_UpdateIssue(){
 		
 		startPage home2=new startPage(driver);
 		loggedInPage loggedin=home2.login("svv.tes@gmail.com", "1234567890");
 		profilePage profile=loggedin.openProfile();
 		filterPage filter=profile.openReportedAndOpen();
-		System.out.println("1"+filter.getIssueType()); // контроль початкового типа ішью
 		filter.updateClick();
-		String type = "Bug";   // встановити тип ішью Баг
-		filter.updateIssueType(type);
-		System.out.println("2"+filter.getIssueType()); // контроль значення яке пійде в порівняння
-		assertTrue(filter.getIssueType().equals(type));
+		filter.updateIssueType();
+	//	System.out.println("test_2 getIssueType :"+filter.getIssueType()); // РєРѕРЅС‚СЂРѕР»СЊ Р·РЅР°С‡РµРЅРЅСЏ СЏРєРµ РїС–Р№РґРµ РІ РїРѕСЂС–РІРЅСЏРЅРЅСЏ
+		assertFalse(filter.getIssueType().equals("Bug"));
 	}
 	
 	
-	@Ignore
 	@Test
-	public void testExistingIssueFoundJiraSearch(){
+	public void test_3_ExistingIssueFoundJiraSearch(){
 		startPage home2=new startPage(driver);
 		loggedInPage loggedin=home2.login("svv.tes@gmail.com", "1234567890");
-		//createIssuePage issue=loggedin.createIssue();
-	//	loggedin.createIssue();
-	//	loggedin.issue(SUMMARY);
 		searchIssuePage search=loggedin.searchIssue(SUMMARY);
-	//	System.out.println(search.getIssueName());
+//		System.out.println("test 3 getIssueName:"+search.getIssueName());
 		assertTrue(search.getIssueName().equals(SUMMARY));
 	}
 }
