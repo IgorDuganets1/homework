@@ -1,7 +1,7 @@
-# *class jiraTestPage*
+# class jiraTestPage
 
 This class designed for testing JIRA issue tracking software. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
-Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
+Logical connection between web-applicationâ€™s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
 
 *Order of classes:*
 - startPage
@@ -10,8 +10,8 @@ Logical connection between web-application’s pages is provided by the instance o
 - searchIssuePage
 - filterPage
 
-**startPage class**
+*startPage class*
 
 Metods:
 - login
-This method organize login procedure and has 2 arguments : String **login**, String **password**
+This method organize login procedure and has 2 arguments : String *login*, String *password*
