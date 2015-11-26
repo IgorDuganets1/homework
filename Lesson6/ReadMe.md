@@ -4,13 +4,13 @@ This class designed for testing JIRA issue tracking software. Every opened page 
 Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
 
 ### *Order of classes:*
-- startPage
+- [startPage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/startPage.java)
 - loggedInPage
 - profilePage
 - searchIssuePage
 - filterPage
 
-#### *[startPage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/startPage.java)*
+#### *startPage*
 
 - **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
