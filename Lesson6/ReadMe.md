@@ -10,12 +10,12 @@ Logical connection between web-application’s pages is provided by the instance
 - searchIssuePage
 - filterPage
 
-###### *startPage class*
+##### *startPage class*
 
 - login(String *login*, String *password*) fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
 
-###### *loggedInPage class*
+##### *loggedInPage class*
 - openProfile() calls Profile Page.
 
 - createIssue() calls Issue Create Window.
@@ -25,14 +25,14 @@ Logical connection between web-application’s pages is provided by the instance
 - searchIssue(String *summary*) clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
 
 
-###### *profilePage class*
-- getUserName()
+##### *profilePage class*
+######- getUserName()
 
 This method returns User Name from Profile Page.
 
-- openReportedAndOpen()
+######- openReportedAndOpen()
 
 This method returns "Reported & Open" Filter's Page.
 
-###### *searchIssuePage*
+##### *searchIssuePage*
 - getIssueName() returns Summary field value of last issue
