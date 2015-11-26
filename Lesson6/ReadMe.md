@@ -12,10 +12,10 @@ Logical connection between web-application’s pages is provided by the instance
 
 ###### *startPage class*
 
-Metods:
 - login(String *login*, String *password*)
 
 This method fills LOGIN field and PASSWORD field by *login* and *password*  values.
+
 
 ###### *loggedInPage class*
 - openProfile()
@@ -33,6 +33,7 @@ This method fills field SUMMARY by *summary* value and click Update Button at Is
 - searchIssue(String *summary*)
 
 This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
+
 
 ###### *profilePage class*
 - getUserName()
