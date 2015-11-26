@@ -1,6 +1,6 @@
 # class jiraTestPage
 
-This class designed for testing JIRA issue tracking software. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
+This class designed for automated testing JIRA issue tracking software. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
 Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
 
 ### *Order of classes:*
@@ -44,3 +44,4 @@ Logical connection between web-application’s pages is provided by the instance
 - **test_1_NewIssueCreated** checks that New Issue can be created.
 - **test_2_UpdateIssue** checks that Existing Issue can be updated.
 - **test_3_ExistingIssueFoundJiraSearch** Existing Issue can be found via JIRA’s search
+
