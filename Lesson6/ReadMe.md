@@ -43,3 +43,6 @@ This method returns User Name from Profile Page.
 - openReportedAndOpen()
 
 This method returns "Reported & Open" Filter's Page.
+
+###### *searchIssuePage*
+- getIssueName() returns Summary field value of last issue
