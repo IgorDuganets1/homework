@@ -14,4 +14,5 @@ Logical connection between web-application’s pages is provided by the instance
 
 Metods:
 - login
+
 This method organize login procedure and has 2 arguments : String *login*, String *password*
