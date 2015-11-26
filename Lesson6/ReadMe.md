@@ -13,9 +13,9 @@ Logical connection between web-application’s pages is provided by the instance
 ###### *startPage class*
 
 Metods:
-- login()
+- login(String *login*, String *password*)
 
-This method organizes login procedure and has 2 arguments : String *login*, String *password*
+This method fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
 ###### *loggedInPage class*
 - openProfile()
@@ -28,11 +28,11 @@ This method calls Issue Create Window.
 
 - issue(String *summary*)
 
-This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. Argument: String *summary* 
+This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
 
 - searchIssue(String *summary*)
 
-This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. Argument: String *summary*
+This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
 
 ###### *profilePage class*
 - getUserName()
