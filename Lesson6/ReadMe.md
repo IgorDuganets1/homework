@@ -41,4 +41,4 @@ Logical connection between web-application’s pages is provided by the instance
 - **getIssueType()** returns Issue Type field value of last issue.
 
 ### *Test Suite list*
-- **test_1_NewIssueCreated**
+- **test_1_NewIssueCreated** verify that New issues can be created
