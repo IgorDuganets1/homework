@@ -17,7 +17,7 @@ This class designed for automated testing JIRA issue tracking software by Firefo
 
 #### *startPage class*
 
-- **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by ```login``` and ```password```  values.
+- **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
 
 #### *loggedInPage class*
