@@ -26,13 +26,9 @@ Logical connection between web-application’s pages is provided by the instance
 
 
 #### *profilePage class*
-######- getUserName()
+- **getUserName()**  returns User Name from Profile Page.
 
-This method returns User Name from Profile Page.
-
-######- openReportedAndOpen()
-
-This method returns "Reported & Open" Filter's Page.
+- **openReportedAndOpen()** returns "Reported & Open" Filter's Page.
 
 ##### *searchIssuePage*
-- getIssueName() returns Summary field value of last issue
+- **getIssueName()** returns Summary field value of last issue
