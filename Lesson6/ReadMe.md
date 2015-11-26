@@ -12,17 +12,17 @@ Logical connection between web-application’s pages is provided by the instance
 
 ##### *startPage class*
 
-- login(String *login*, String *password*) fills LOGIN field and PASSWORD field by *login* and *password*  values.
+- **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
 
 ##### *loggedInPage class*
-- openProfile() calls Profile Page.
+- **openProfile()** calls Profile Page.
 
-- createIssue() calls Issue Create Window.
+- **createIssue()** calls Issue Create Window.
 
-- issue(String *summary*)  fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
+- **issue(String *summary*)**  fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
 
-- searchIssue(String *summary*) clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
+- **searchIssue(String *summary*)** clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
 
 
 ##### *profilePage class*
