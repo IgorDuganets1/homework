@@ -10,7 +10,7 @@ Logical connection between web-application’s pages is provided by the instance
 - searchIssuePage
 - filterPage
 
-*startPage class*
+###### *startPage class*
 
 Metods:
 - login
