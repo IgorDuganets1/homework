@@ -3,7 +3,7 @@
 This class designed for testing JIRA issue tracking software. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
 Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
 
-*Order of classes:*
+##### *Order of classes:*
 - startPage
 - loggedInPage
 - profilePage
