@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class jiraTestPage {
 	
 	private FirefoxDriver driver;
-	private final String SUMMARY="Newest Test Issue №3";
+	private final String SUMMARY="Newest Test Issue №5";
 
 	
 	@Before
@@ -28,26 +27,17 @@ public class jiraTestPage {
 	@After public void closeBrowser() 
 			{driver.close();}
 	
-	@Ignore
-	@Test
-	public void profileUserName(){
-		startPage home= new startPage(driver);
-		loggedInPage loggedin= home.login("svv.tes@gmail.com", "1234567890");
-		profilePage profile= loggedin.openProfile();
-		assertTrue(profile.getUserName().equals("testuser"));
-		}
-	
+		
 	@Test
 	public void test_1_NewIssueCreated(){
 		
 		startPage home2=new startPage(driver);
 		loggedInPage loggedin=home2.login("svv.tes@gmail.com", "1234567890");
 	
-//		loggedin.createIssue();
-//		loggedin.issue(SUMMARY);
+		loggedin.createIssue();
+		loggedin.issue(SUMMARY);
 	
-		profilePage profile= loggedin.openProfile();
-		filterPage filter=profile.openReportedAndOpen();
+		filterPage filter=loggedin.openIssueCreatedWindow();
 		assertTrue(filter.getSummaryIssue().equals(SUMMARY));
 	}	
 	
@@ -64,7 +54,6 @@ public class jiraTestPage {
 	//	System.out.println("test_2 getIssueType :"+filter.getIssueType()); // контроль значення яке пійде в порівняння
 		assertFalse(filter.getIssueType().equals("Bug"));
 	}
-	
 	
 	@Test
 	public void test_3_ExistingIssueFoundJiraSearch(){

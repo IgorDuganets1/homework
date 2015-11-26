@@ -17,6 +17,13 @@ public class loggedInPage
 		driver.findElement(By.id("view_profile")).click();
 		return new profilePage(driver);}
 	
+	public filterPage openIssueCreatedWindow()
+	{
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/a")).click();
+		return new filterPage(driver);	
+	}
+
+	
 	public profilePage createIssue()
 	{
 		driver.findElement(By.xpath(".//*[@id='create_link']")).click();
