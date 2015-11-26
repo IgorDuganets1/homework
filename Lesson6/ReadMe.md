@@ -28,7 +28,7 @@ This class designed for automated testing JIRA issue tracking software by Firefo
 - **issue(String *summary*)**  fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. 
 
 - **searchIssue(String *summary*)** clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
-
+- **openIssueCreatedWindow()** clicks link in pop-up window and calls Created Issue Page
 
 #### *profilePage class*
 - **getUserName()**  returns User Name from Profile Page.
