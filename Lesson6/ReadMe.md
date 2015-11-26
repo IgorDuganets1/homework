@@ -13,32 +13,32 @@ Logical connection between web-application’s pages is provided by the instance
 ###### *startPage class*
 
 Metods:
-- login
+- login()
 
 This method organizes login procedure and has 2 arguments : String *login*, String *password*
 
 ###### *loggedInPage class*
-- openProfile
+- openProfile()
 
 This method calls Profile Page.
 
-- createIssue
+- createIssue()
 
 This method calls Issue Create Window.
 
-- issue
+- issue(String *summary*)
 
 This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. Argument: String *summary* 
 
-- searchIssue
+- searchIssue(String *summary*)
 
 This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. Argument: String *summary*
 
 ###### *profilePage class*
-- getUserName
+- getUserName()
 
 This method returns User Name from Profile Page.
 
-- openReportedAndOpen
+- openReportedAndOpen()
 
 This method returns "Reported & Open" Filter's Page.
