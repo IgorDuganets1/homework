@@ -30,5 +30,11 @@ Logical connection between web-application’s pages is provided by the instance
 
 - **openReportedAndOpen()** returns "Reported & Open" Filter's Page.
 
-##### *searchIssuePage*
-- **getIssueName()** returns Summary field value of last issue
+#### *searchIssuePage class*
+- **getIssueName()** returns Summary field value of searched issue.
+
+#### *filterPage class*
+
+- **getSummaryIssue() ** returns Summary field value of last issue.
+- **updateClick()** calls Update Issue Window.
+- **updateIssueType()** selects Issue Type dropdown list and makes changes current value to value below. 
