@@ -10,12 +10,12 @@ Logical connection between web-application’s pages is provided by the instance
 - searchIssuePage
 - filterPage
 
-#### *startPage class*
+#### *[startPage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/startPage.java)*
 
 - **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by *login* and *password*  values.
 
 
-#### *loggedInPage class*
+#### *[loggedInPage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/loggedInPage.java)*
 - **openProfile()** calls Profile Page.
 
 - **createIssue()** calls Issue Create Window.
@@ -25,12 +25,12 @@ Logical connection between web-application’s pages is provided by the instance
 - **searchIssue(String *summary*)** clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. 
 
 
-#### *profilePage class*
+#### *[profilePage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/profilePage.java)*
 - **getUserName()**  returns User Name from Profile Page.
 
 - **openReportedAndOpen()** returns "Reported & Open" Filter's Page.
 
-#### *searchIssuePage class*
+#### *[searchIssuePage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/searchIssuePage.java)*
 - **getIssueName()** returns Summary field value of searched issue.
 
 #### *[filterPage class](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/filterPage.java)*
