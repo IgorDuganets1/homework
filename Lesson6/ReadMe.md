@@ -15,17 +15,21 @@ Logical connection between web-application’s pages is provided by the instance
 Metods:
 - login
 
-This method organize login procedure and has 2 arguments : String *login*, String *password*
+This method organizes login procedure and has 2 arguments : String *login*, String *password*
 
 ###### *loggedInPage class*
 - openProfile
 
-This method call Profile Page.
+This method calls Profile Page.
 
 - createIssue
 
-This method call Issue Create Window.
+This method calls Issue Create Window.
 
 - issue
 
 This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. Argument: String *summary* 
+
+- searchIssue
+
+This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. Argument: String *summary*
