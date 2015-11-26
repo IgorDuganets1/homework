@@ -1,12 +1,12 @@
 # class jiraTestPage
 
-This class designed for automated testing JIRA issue tracking software by Firefox Mozilla browser. 
-### *Test Suite list*
+This class designed for automated testing JIRA issue tracking software by Firefox Mozilla browser. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.  Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class. ** The name of New Issue sets in ** *SUMMARY* **conctatnt.** 
+
+#### *Test Suite list*
 - **test_1_NewIssueCreated** checks that New Issue can be created.
 - **test_2_UpdateIssue** checks that Existing Issue can be updated.
-- **test_3_ExistingIssueFoundJiraSearch** Existing Issue can be found via JIRA’s search
-Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
-Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
+- **test_3_ExistingIssueFoundJiraSearch** Existing Issue can be found via JIRA’s search.
+
 
 ### *Order of classes:*
 - [startPage](https://github.com/IgorDuganets1/homework/blob/master/Lesson6/src/startPage.java)
