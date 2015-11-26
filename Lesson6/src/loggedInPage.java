@@ -11,8 +11,9 @@ public class loggedInPage
 	
 	public profilePage openProfile() 
 	{
-	//	driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/div[3]/ul/li[3]/a/span/span/img")).click();
-		driver.findElement(By.id("header-details-user-fullname")).click();
+		driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/div[3]/ul/li[3]/a/span/span/img")).click();
+	//	driver.findElement(By.id("header-details-user-fullname")).click();
+	//	driver.findElementByCssSelector("html.mozilla body#jira.aui-layout.aui-theme-default.ka.ajax-issue-search-and-view.page-type-navigator.page-type-split div#page header#header nav.aui-header.aui-dropdown2-trigger-group div.aui-header-inner div.aui-header-secondary ul.aui-nav.__skate li#user-options a#header-details-user-fullname.aui-dropdown2-trigger span.aui-avatar.aui-avatar-small span.aui-avatar-inner img");
 		driver.findElement(By.id("view_profile")).click();
 		return new profilePage(driver);}
 	

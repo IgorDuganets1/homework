@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class profilePage {
@@ -13,8 +14,11 @@ public class profilePage {
 	
 	public Object getUserName() 
 	  {
-		return driver.findElement(By.id("up-user-title-name")).getText();
-	  } //temporarychanges
+	//	return driver.findElement(By.id("up-user-title-name")).getText();
+		WebElement googleSearchBtn = driver.findElement(By.id("up-user-title-name"));
+		return googleSearchBtn.getAttribute("name");
+		
+	  } 
 	
 	public filterPage openReportedAndOpen() 
 	{
@@ -22,3 +26,4 @@ public class profilePage {
 		driver.findElement(By.id("rep_open")).click();
 		return new filterPage(driver);}
 }
+
