@@ -16,3 +16,16 @@ Metods:
 - login
 
 This method organize login procedure and has 2 arguments : String *login*, String *password*
+
+###### *loggedInPage class*
+- openProfile
+
+This method call Profile Page.
+
+- createIssue
+
+This method call Issue Create Window.
+
+- issue
+
+This method fills field SUMMARY by *summary* value and click Update Button at Issue Create Window. Argument: String *summary* 
