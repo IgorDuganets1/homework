@@ -3,7 +3,7 @@
 This class designed for testing JIRA issue tracking software. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.
 Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class
 
-##### *Order of classes:*
+#### *Order of classes:*
 - startPage
 - loggedInPage
 - profilePage
@@ -33,3 +33,12 @@ This method fills field SUMMARY by *summary* value and click Update Button at Is
 - searchIssue
 
 This method clears, puts *summary* value in the Search feild and clicks Enter. Returns Search Issue Page. Argument: String *summary*
+
+###### *profilePage class*
+- getUserName
+
+This method returns User Name from Profile Page.
+
+- openReportedAndOpen
+
+This method returns "Reported & Open" Filter's Page.
