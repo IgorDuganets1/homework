@@ -1,6 +1,6 @@
 # class jiraTestPage
 
-This class designed for automated testing JIRA issue tracking software by Firefox Mozilla browser. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.  Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class. **The name of New Issue sets in** ```*SUMMARY*``` **constant.** 
+This class designed for automated testing JIRA issue tracking software by Firefox Mozilla browser. Every opened page is realized in the separate class. Every action on a page is realized as appropriate method.  Logical connection between web-application’s pages is provided by the instance of current class. This instance is an object of manipulation in the subsequent class. **The name of New Issue sets in** *SUMMARY* **constant.** 
 
 #### *Test Suite list*
 - **test_1_NewIssueCreated** checks that New Issue can be created.
@@ -17,7 +17,7 @@ This class designed for automated testing JIRA issue tracking software by Firefo
 
 #### *startPage class*
 
-- **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by *login* and *password*  values.
+- **login(String *login*, String *password*)** fills LOGIN field and PASSWORD field by ```login``` and ```password```  values.
 
 
 #### *loggedInPage class*
