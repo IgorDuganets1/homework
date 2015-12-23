@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<createIssue_menu>
+
+<project>Demo(DEMO)</project>
+<issueType>Bug</issueType>
+<summary>Test Issue №1</summary>
+<priority>Minor</priority>
+<components>Fuselage</components>
+<affectsVersion>Production</affectsVersion>
+<ENVIRONMENT>Windows 3.11</ENVIRONMENT>
+<DESCRIPTION>It&apos;s very simple bug</DESCRIPTION>
+<ORIGINAL_ESTIMATE>1d 4h</ORIGINAL_ESTIMATE>
+<labels>qa-manual</labels>
+<storyPoints></storyPoints>
+<sprint>None</sprint>
+<epicLink></epicLink>
+<REGULAR_EXPRESSION></REGULAR_EXPRESSION>

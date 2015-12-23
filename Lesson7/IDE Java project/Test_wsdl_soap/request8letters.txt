@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:LetterSolutionsMin>
+         <!--Optional:-->
+         <web:anagram>testing</web:anagram>
+         <web:minLetters>8</web:minLetters>
+      </web:LetterSolutionsMin>
+   </soapenv:Body>
+</soapenv:Envelope>
